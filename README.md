@@ -1,6 +1,6 @@
 ## 📊 Monitoreo de Salud
 
-Este proyecto permite el monitoreo de signos vitales como temperatura, ritmo cardíaco y presión arterial. Utiliza una interfaz gráfica construida con `tkinter` para simular la lectura de datos médicos y generar reportes.
+Este proyecto permite el monitoreo de signos vitales como temperatura, ritmo cardíaco y presión arterial. Utiliza una interfaz gráfica construida con `PHP, Javascript y MySQL` para simular la lectura de datos médicos y generar reportes.
 
 ### 🧰 Tecnologías utilizadas
 
