@@ -1,0 +1,83 @@
+@font-face {
+    font-family: LatoRegular;
+    src: url(../fuentes/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoRegular;
+    src: url(../fuentes/Nunito/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSemiBold;
+    src: url(../fuentes/Nunito/Nunito-SemiBold.ttf);
+}
+
+input, select {
+    font-family: LatoRegular;
+}
+
+body {
+    background-image: url("../img/background1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: NunitoSemiBold;
+}
+.form-container label {
+    font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form-container button,
+.form-container a.listado {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    width: calc(50% - 10px);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+.form-container button.agregar {
+    background-color: #007bff;
+    margin-right: 10px;
+}
+.form-container a.listado {
+    background-color: #6c757d;
+}
+.alert {
+    margin-top: 20px;
+}

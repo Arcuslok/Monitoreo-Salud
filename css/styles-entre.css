@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f8f8;
+}
+
+h1.h3 {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card {
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.btn-secondary {
+    margin-right: 5px;
+}

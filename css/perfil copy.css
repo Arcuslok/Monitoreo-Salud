@@ -1,0 +1,53 @@
+body {
+    background-image: url("../img/perfil.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+.form-container label {
+    font-weight: bold;
+}
+.form-container input {
+    margin-bottom: 15px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+h2 {
+    margin-bottom: 0;
+    text-align: left; /* Cambiado a left para alinearlo con la imagen */
+    margin-left: 10px; /* Añadido margen a la izquierda para separación */
+}
+.profile-pic {
+    width: 90px; /* Tamaño aumentado */
+    height: 90px; /* Tamaño aumentado */
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+    align-self: center; /* Centra la imagen verticalmente */
+}
+.title-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el título */
+}

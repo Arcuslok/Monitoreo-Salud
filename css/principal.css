@@ -1,0 +1,55 @@
+@font-face {
+    font-family: LatoRegular;
+    src: url(../fuentes/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoRegular;
+    src: url(../fuentes/Nunito/Nunito-Regular.ttf);
+}
+
+@font-face {
+    font-family: NunitoSemiBold;
+    src: url(../fuentes/Nunito/Nunito-SemiBold.ttf);
+}
+
+h4 {
+    font-family: LatoRegular;
+}
+
+span {
+    font-family: LatoRegular;
+}
+
+h1 {
+    font-family: LatoRegular;
+}
+
+p {
+    font-family: LatoRegular;
+}
+
+.jumbotron {
+    align-items: start;
+    height: 93.6vh; 
+    background-size: contain;
+    background-repeat: repeat-x; /* Solo se repite horizontalmente */
+    animation: moveBackground 10s linear infinite alternate; /* Movimiento continuo e inverso */
+}
+
+@keyframes moveBackground {
+    from {
+        background-image: url("../img/background1.jpg");
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+        background-image: url("../img/background2.jpg");
+    }
+}
+
+.navbar-nav .dropdown-item {
+    right: 100px;
+    left: 100px;
+}
+

@@ -1,0 +1,44 @@
+<?php
+require_once '../funciones/Funciones SQL.php';
+
+session_start();
+
+// Conectar a la base de datos
+$Conn = Conectar_Base_Datos();
+
+// Verificar si la sesión contiene los datos del usuario
+if (!isset($_SESSION['Datos'])) {
+    echo json_encode(['success' => false, 'message' => 'No se pudo obtener el usuario de la sesión.']);
+    exit;
+}
+
+$Datos = $_SESSION['Datos'];
+$Correo = $Datos['Correo_usuario'];
+
+// Obtener el rut del usuario
+$rut = Obtener_Rut_Usuario($Conn, $Correo);
+
+// Obtener los datos de la solicitud GET
+$rutina = $_GET['rutina'] ?? null;
+$nombre = $_GET['nombre'] ?? null;
+$repeticiones = $_GET['repeticiones'] ?? null;
+$series = $_GET['series'] ?? null;
+
+// Validar que los datos necesarios estén presentes
+if (!$rutina || !$nombre || !$repeticiones || !$series) {
+    echo json_encode(['success' => false, 'message' => 'Faltan datos para agregar el ejercicio.']);
+    exit;
+}
+
+// Actualizar los ejercicios del usuario en la base de datos
+$resultado = Agregar_Ejercicios_Usuario($Conn, $rut, $rutina, $nombre, $repeticiones, $series);
+
+if ($resultado['success']) {
+    echo json_encode(['success' => true, 'message' => 'Ejercicio agregado correctamente.']);
+} else {
+    echo json_encode(['success' => false, 'message' => $resultado['error']]);
+}
+
+// Cerrar la conexión a la base de datos
+mysqli_close($Conn);
+?>
