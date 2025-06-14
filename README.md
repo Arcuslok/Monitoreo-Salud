@@ -1,6 +1,6 @@
 ## 📊 Health Monitoring
 
-This project allows the monitoring of vital signs such as temperature, heart rate, and blood pressure. It uses a graphical interface built with PHP, Javascript, and MySQL to simulate medical data reading and generate reports.
+This project allows the monitoring of vital signs such as temperature, heart rate, and blood pressure. It uses a graphical interface built with `PHP, Javascript, and MySQL` to simulate medical data reading and generate reports.
 
 ### 🧰 Technologies Used
 
